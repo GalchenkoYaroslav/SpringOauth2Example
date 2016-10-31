@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQL Server (Microsoft) - Permissions_zhenya@77.47.209.119" uuid="ca33ae72-9d91-42d7-a620-2af660848864">
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-pattern>Permissions_zhenya.*</schema-pattern>
+      <default-schemas>Permissions_zhenya.*</default-schemas>
+    </data-source>
+  </component>
+</project>

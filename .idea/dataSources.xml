@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2422043231">
+    <data-source source="LOCAL" name="SQL Server (Microsoft) - Permissions_zhenya@77.47.209.119" uuid="ca33ae72-9d91-42d7-a620-2af660848864">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://77.47.209.119:21776;databaseName=Permissions_zhenya</jdbc-url>
+    </data-source>
+  </component>
+</project>

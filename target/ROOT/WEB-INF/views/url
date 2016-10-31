@@ -1,0 +1,39 @@
+Attempt to access resources [REST API] without any authorization [will fail of-course].
+GET http://localhost:8080/user/
+
+Ask for tokens[access+refresh] using HTTP POST on /oauth/token, with grant_type=password,and resource owners credentials as req-params. Additionally, send client credentials in Authorization header.
+POST http://localhost:8080/api/oauth/token?grant_type=password&username=bill&password=abc123
+
+Ask for a new access token via valid refresh-token, using HTTP POST on /oauth/token, with grant_type=refresh_token,and sending actual refresh token. Additionally, send client credentials in Authorization header.
+POST http://localhost:8080/oauth/token?grant_type=refresh_token&refresh_token=3423bbff-b9bc-4ea2-8d8d-3124213b241b
+
+Access the resource by providing an access token using access_token query param with request.
+GET http://localhost:8080/myuser/?access_token=80fd13e7-2570-4384-9f17-ab468b6bf04f
+
+
+7a54a2e0-ccb2-4c2e-be31-11d46e9668d3
+
+
+
+
+select t2.Name, t2.Surname from Permissions_zhenya.dbo.Permissions as t1
+join inform.dbo.Passports as t2
+on t1.id_employee = t2.ID_Employee_Owner where t1.login = 'bill'
+
+/*
+use inform
+GO
+SET IDENTITY_INSERT [dbo].[Passports] ON
+GO
+INSERT [dbo].[Passports] ([ID_Passport], [ID_Employee_Owner], [Active], [Name], [Surname], [Patronymic], [Series], [Number], [GiveOut], [GiveOutData], [PlaceOfRegistration], [ID_Citizenship], [OrderNumber], [OrderData]) VALUES (1, 1, 1, N'Ольга', N'Нестеренко', N'Михайлівна', N'СН    ', N'476552    ', N'Шевченківським РУГУ,м.Київа', CAST(N'1997-04-04 00:00:00.000' AS DateTime), N'вул.Подвойського 10а,кв.68', 226, N'   314л   ', CAST(N'1999-02-18 00:00:00.000' AS DateTime))
+*/
+
+
+
+/*
+
+  select t2.Name, t2.Surname from Permissions_zhenya.dbo.Permissions as t1
+        join inform.dbo.Passports as t2
+        on t1.id_employee = t2.ID_Employee_Owner where t1.login = 'bill'
+
+*/
